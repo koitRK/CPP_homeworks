@@ -9,8 +9,9 @@ int balance = 0;
 int target = 0;
 
 void change_target(){
-    target = std::rand();
-    //std::cout << "New target is " << target << std::endl;
+    target = std::rand() % 100000;
+    target = std::rand() % 100000;
+    std::cout << "New target is " << target << std::endl;
     return;
 }
 
@@ -43,7 +44,7 @@ bool is_number(std::string s)
 
 int main(){
 
-    std::srand(std::time(nullptr));
+    std::srand(std::time(NULL));
 
 
     std::string user_input;
